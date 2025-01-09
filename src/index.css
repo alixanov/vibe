@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  /* Минимальная высота для body */
+  overflow-x: hidden;
+  /* Скрываем горизонтальный скролл */
+}
+
+#root {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Обеспечивает высоту для скроллинга */
+  background: radial-gradient(circle, #ff9a9e, #fad0c4, #fbc2eb);
+  background-size: cover;
+  transition: background 1s ease-in-out;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 81px);
+  /* Высота контента между Navbar и Footer */
+}
+
