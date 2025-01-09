@@ -5,7 +5,7 @@ import Navbar from "../components/navbar/Navbar";
 import Home from "../components/Home/Home";
 import Product from "../components/product/Product";
 import Footer from "../components/footer/Footer";
-
+import About from "../components/about/About"
 const AppRoutes = () => {
      const backgroundRef = useRef(null);
 
@@ -40,6 +40,8 @@ const AppRoutes = () => {
                     <Routes>
                          <Route path="/" element={<Home />} />
                          <Route path="/all-products" element={<Product />} />
+                         <Route path="/about" element={<About/>} />
+                         
                     </Routes>
                </div>
                <Footer />
