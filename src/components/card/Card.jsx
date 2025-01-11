@@ -4,29 +4,30 @@ import "aos/dist/aos.css";
 import "./card.css";
 import man from "../../assets/man.png";
 import women from "../../assets/women.png";
-import children from "../../assets/kids.png";
-import general from "../../assets/general.png"
+import children from "../../assets/2c551d7065d7a915de047e3fb37f9dcd.png";
+import general from "../../assets/general.png";
 
 const data = [
      {
           img: man,
-          title: "Мужская коллекция",
-          description: "Откройте для себя стильные вещи для мужчин.",
+          title: "Мужская парфюмерия",
+          description: "Найдите свой идеальный аромат в мужской коллекции.",
+          customClass: "custom-width-man" // Добавим кастомный класс
      },
      {
           img: women,
-          title: "Женская коллекция",
-          description: "Коллекция для женщин: элегантность и комфорт.",
+          title: "Женская парфюмерия",
+          description: "Элегантные и изысканные ароматы для женщин.",
      },
      {
           img: children,
-          title: "Детская коллекция",
-          description: "Милые и стильные вещи для детей.",
+          title: "Детская парфюмерия",
+          description: "Милые и нежные ароматы для детей.",
      },
      {
           img: general,
-          title: "Общая коллекция",
-          description: "Милые и стильные вещи для детей.",
+          title: "Общая парфюмерия",
+          description: "Ароматы для всех: универсальные и привлекательные.",
      },
 ];
 
@@ -49,7 +50,7 @@ const Card = () => {
                          data-aos="fade-up"
                          data-aos-delay={index * 200}
                     >
-                         <img src={item.img} alt={item.title} className="card__image" />
+                         <img src={item.img} alt={item.title} className={`card__image ${item.customClass || ""}`} />
                          <div className="card__content">
                               <h3 className="card__title">{item.title}</h3>
                               <p className="card__description">{item.description}</p>

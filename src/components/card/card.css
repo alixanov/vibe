@@ -22,8 +22,16 @@
 
 .card__image {
      width: 100%;
-     height: 220px;
+     height: 280px;
      object-fit: cover;
+}
+
+/* Добавляем отдельный класс для задания ширины конкретной картинки */
+.custom-width-man {
+     height: 700px;
+     /* Задайте здесь нужную ширину для картинки */
+     margin: 0 auto;
+     /* Для центрирования изображения */
 }
 
 .card__content {

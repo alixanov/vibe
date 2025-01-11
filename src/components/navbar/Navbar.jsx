@@ -12,8 +12,8 @@ const Navbar = () => {
 
      useEffect(() => {
           AOS.init({
-               duration: 500, // Длительность анимации
-               easing: "ease-out", // Плавность
+               duration: 500,
+               easing: "ease-out",
           });
 
           let lastScrollY = window.scrollY;
@@ -21,16 +21,13 @@ const Navbar = () => {
           const handleScroll = () => {
                const currentScrollY = window.scrollY;
 
-               // Проверяем направление прокрутки
                if (currentScrollY > lastScrollY && currentScrollY > 50) {
-                    setScrollDirection("down"); // Скролл вниз
+                    setScrollDirection("down");
                } else if (currentScrollY < lastScrollY) {
-                    setScrollDirection("up"); // Скролл вверх
+                    setScrollDirection("up");
                }
 
                lastScrollY = currentScrollY;
-
-               // Устанавливаем флаг "scrolled" для изменения стиля Navbar
                setScrolled(currentScrollY > 50);
           };
 
@@ -43,15 +40,13 @@ const Navbar = () => {
 
      return (
           <nav
-               className={`navbar ${
-                    scrollDirection === "down" ? "hidden" : "visible"
-               } ${scrolled ? "scrolled" : ""}`}
-               data-aos="slide-down"
+               className={`navbar ${scrollDirection === "down" ? "navbar--hidden" : ""
+                    } ${scrolled ? "scrolled" : ""}`}
           >
-               <div className="navbar__logo">
+               <div className="navbar__logo" data-aos="fade-down">
                     <Link to="/">VIBE.</Link>
                </div>
-               <div className={`navbar__links ${isOpen ? "open" : ""}`}>
+               <div className={`navbar__links ${isOpen ? "open" : ""}`} data-aos="fade-down">
                     <Link to="/">Главная</Link>
                     <Link to="/all-products">Все продукты</Link>
                     <Link to="/about">О нас</Link>
@@ -63,6 +58,7 @@ const Navbar = () => {
                >
                     <AccountCircleIcon
                          sx={{ color: isOpen ? "#FFA500" : "#06324F" }}
+                         data-aos="fade-down"
                     />
                </div>
           </nav>
