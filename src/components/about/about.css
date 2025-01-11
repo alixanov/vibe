@@ -1,22 +1,81 @@
+/* about.css */
 .about-container {
-    padding: 2rem;
     text-align: center;
+    padding: 2rem;
   }
   
-  .about-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #06324f;
+  .about-text {
+    margin-bottom: 2rem;
   }
   
-  .about-container p {
+  .about-text h2 {
+    font-size: 1.8rem; /* H2 kichikroq qilindi */
+    color: #06324F;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    transition: font-size 0.3s ease;
+  }
+  
+  .about-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  
+  .image-container {
+    width: 48%;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-under-image {
+    margin-top: 1rem;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    line-height: 1.6;
+    font-weight: bold;
+    color: #06324F;
   }
   
-  .about-container strong {
+  .location {
+    margin-top: 2rem;
+  }
+  
+  .location h3 {
+    font-size: 1.5rem;
+    color: #06324F;
+    margin-bottom: 1rem;
+  }
+  
+  .location p {
+    font-size: 1rem;
+    color: #333;
     font-weight: bold;
+  }
+  /* about.css */
+.about-text h6 {
+    font-size: 20px; /* H4 matni uchun o'lcham */
+    color:black;
+    font-weight: 300;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: font-size 0.3s ease;
+    margin-top: 15px;
   }
   

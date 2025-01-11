@@ -1,34 +1,71 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "./about.css"
-import "aos/dist/aos.css"; // AOS CSS-ni import qilish
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './about.css';
+
+import parfumImage from '../../assets/parfum-image.jpg';  // Parfumeriya rasmi
+import officeImage from '../../assets/office-image.jpg';  // Ofis rasmi
 
 const About = () => {
-  // AOS-ni boshlash
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animatsiya davomiyligi
-      easing: "ease-out", // Animatsiya effekti
+      duration: 1000, 
+      easing: 'ease-in-out',
+      once: true,  // Animatsiya faqat bir marta ishlaydi
     });
   }, []);
 
   return (
     <div className="about-container">
-      <h1 data-aos="fade-up">Vibe Do'koni Haqida</h1>
-      <p data-aos="fade-left">
-        <strong>Vibe</strong> - bu sifatli va zamonaviy mahsulotlar bilan mijozlarga yuqori xizmat ko'rsatishni maqsad qilgan do'kon. Bizning do'konimizda parfumlar, kosmetik vositalar va boshqa mahsulotlar mavjud bo'lib, har bir mahsulot maxsus sinovdan o'tgan va eng yuqori sifatga ega. Mahsulotlarimiz mijozlarimizning ehtiyojlariga mos ravishda tayyorlangan va ularning har biriga yuqori qiymat qo'shadi.
-      </p>
-      <p data-aos="fade-right">
-        Bizning asosiy maqsadimiz - mijozlarga faqatgina ajoyib mahsulotlarni taklif qilish emas, balki ularni eng yaxshi xizmat bilan ta'minlashdir. Do'konimizda sizning ehtiyojlaringizga mos keladigan har bir narsani topishingiz mumkin. Har bir mahsulot bizning do'konimizga kelgan har bir mijozning ishonchini qozonish uchun tasdiqlangan.
-      </p>
-      <p data-aos="fade-up">
-        Bizning assortimentimizda nafaqat klassik parfumlar, balki zamonaviy va o'ziga xos turli xil kosmetik vositalar ham mavjud. Biz mijozlarimizni quvontirishni va ularga eng yaxshi xizmat ko'rsatishni maqsad qilganmiz. Vibe - bu nafaqat do'kon, balki sizning go'zalligingiz va nafasingizni kashf qilishingiz uchun ajoyib joydir.
-      </p>
-      <p data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-      Bizning instagram saytimiz
-</p>
+      {/* Malumotlar */}
+      <div className="about-text">
+        <h2 data-aos="fade-up">Bizning Vibe do'koni va mahsulotlarimiz</h2>
+        <h6 data-aos="fade-left" data-aos-delay="100">
+          Vibe parfumeriya va kosmetika do'koni sizni eng yuqori sifatli mahsulotlar bilan kutib oladi. Bizning maqsadimiz, sizga ajoyib tajriba taqdim etish va go'zallikni yanada yaxshilashdir.
+        </h6>
+        <h6 data-aos="fade-right" data-aos-delay="200">
+          Bizning do'konimizda har bir mijoz uchun o'ziga xos mahsulotlar mavjud. Sizning ehtiyojlaringizni hisobga olib, sizga eng yaxshi xizmatlarni taqdim etishga intilamiz.
+        </h6>
+        <h6 data-aos="fade-up" data-aos-delay="300">
+          Biz har doim eng yangi va sifatli kosmetika va parfyumeriya mahsulotlarini taqdim etamiz, va mijozlarimizni har tomonlama qo'llab-quvvatlashga tayyormiz.
+        </h6>
+        <h6 data-aos="fade-left" data-aos-delay="400">
+          Bizning do'konimizda har bir kishi uchun maxsus sovg'alar va aksiyalar mavjud. Bizning asosiy maqsadimiz – go'zallik va nafislikni kundalik hayotingizga olib kirishdir!
+        </h6>
+      </div>
+
+      {/* Rasmlar va matnlar */}
+      <div className="about-images" data-aos="fade-up">
+        {/* Parfumeriya rasmi */}
+        <div className="image-container">
+          <img
+            src={parfumImage} // Import qilingan parfumeriya rasm
+            alt="Parfumeriya"
+            className="about-image"
+          />
+          <div className="text-under-image">
+            Do'konimiz
+          </div>
+        </div>
+
+        {/* Ofis rasmi */}
+        <div className="image-container">
+          <img
+            src={officeImage} // Import qilingan ofis rasmi
+            alt="Ofis"
+            className="about-image"
+          />
+          <div className="text-under-image">
+            Bizning ofis
+          </div>
+        </div>
+      </div>
+
+      {/* Manzil */}
+      <div className="location" data-aos="fade-up" data-aos-delay="500">
+        <h3>Bizning Manzilimiz</h3>
+        <p>Vibe Parfumeriya va Kosmetika, 1234 Go'zallik Ko'chasida.</p>
+      </div>
     </div>
   );
 };
