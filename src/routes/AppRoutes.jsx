@@ -8,12 +8,6 @@ import Footer from "../components/footer/Footer";
 import About from "../components/about/About"
 const AppRoutes = () => {
      const backgroundRef = useRef(null);
-
-
-
-
-
-
      
      useEffect(() => {
           const animation = gsap.timeline({ repeat: -1, yoyo: true });
