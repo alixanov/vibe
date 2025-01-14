@@ -7,6 +7,7 @@ import parfumImage from '../../assets/parfum-image.jpg';  // Parfumeriya rasmi
 import officeImage from '../../assets/office-image.jpg';  // Ofis rasmi
 
 const About = () => {
+<<<<<<< HEAD
   useEffect(() => {
     AOS.init({
       duration: 1000, 
@@ -71,3 +72,13 @@ const About = () => {
 };
 
 export default About;
+=======
+  return (
+    <div>
+      Hello
+    </div>
+  )
+}
+
+export default About
+>>>>>>> 23e4169bdfddf489180397429ce9a06573415326

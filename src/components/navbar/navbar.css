@@ -10,20 +10,15 @@
      z-index: 1000;
      transition: transform 0.3s ease, background-color 0.3s ease;
      background-color: transparent;
-     /* Начальный цвет */
 }
 
 .navbar.scrolled {
-     /* background: radial-gradient(circle, white, #06324f17, #fbc2eb);
-      */
-      background-color: white;
-     /* Цвет при прокрутке */
+     background-color: white;
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar.hidden {
+.navbar--hidden {
      transform: translateY(-100%);
-     /* Исчезает при скролле вниз */
 }
 
 .navbar__logo a {
