@@ -8,13 +8,8 @@ import Footer from "../components/footer/Footer"; // Footer компонентн
 import About from "../components/about/About"; // About компонентни импорт қилиш
 
 const AppRoutes = () => {
-<<<<<<< HEAD
-     const backgroundRef = useRef(null);
-     
-=======
      const backgroundRef = useRef(null); // Фон учун рефни яратиш
 
->>>>>>> 23e4169bdfddf489180397429ce9a06573415326
      useEffect(() => {
           // GSAP билан анимацияни белгилаш
           const animation = gsap.timeline({ repeat: -1, yoyo: true });
