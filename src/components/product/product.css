@@ -26,24 +26,60 @@
     border-radius: 15px;
 }
 
-.container__one h1, 
-.container__two h1, 
-.container__three h1, 
-.container__four h1, 
+.container__one h1,
+.container__two h1,
+.container__three h1,
+.container__four h1,
 .container__five h1 {
+    font-weight: bold;
     padding-left: 15px;
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
-.container__one h2, 
-.container__two h2, 
-.container__three h2, 
-.container__four h2, 
+.container__one h2,
+.container__two h2,
+.container__three h2,
+.container__four h2,
 .container__five h2 {
     padding-left: 15px;
     padding-top: 10px;
     font-size: 20px;
+    font-weight: normal;
+}
+
+.container__one button,
+.container__two button,
+.container__three button,
+.container__four button,
+.container__five button {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 7px;
+    transition: all 0.3s;
+    box-shadow: 10px 9px rgba(0, 0, 0, 0.150);
+}
+
+button:hover {
+    background-color: red;
+    transition: all 0.5s;
+
+}
+
+button:active {
+    transition: all 0.1s;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .container .container__one .container__one-pictures,
