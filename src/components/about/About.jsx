@@ -10,7 +10,7 @@ const About = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
       easing: 'ease-in-out',
       once: true,  // Animatsiya faqat bir marta ishlaydi
     });
@@ -52,10 +52,9 @@ const About = () => {
         {/* Ofis rasmi */}
         <div className="image-container">
           <img
-            src={officeImage} // Import qilingan ofis rasmi
+            src={officeImage} // Import qilingan ofis rasmi 
             alt="Ofis"
-            className="about-image"
-          />
+            className="about-image" />
           <div className="text-under-image">
             Bizning ofis
           </div>

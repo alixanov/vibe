@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container__one,
+.container__two,
+.container__three,
+.container__four,
+.container__five {
+    width: 18%;
+    height: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.container__one h1, 
+.container__two h1, 
+.container__three h1, 
+.container__four h1, 
+.container__five h1 {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container__one h2, 
+.container__two h2, 
+.container__three h2, 
+.container__four h2, 
+.container__five h2 {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container .container__one .container__one-pictures,
+.container .container__two .container__two-pictures,
+.container .container__three .container__three-pictures,
+.container .container__four .container__four-pictures,
+.container .container__five .container__five-pictures {
+    width: 100%;
+    height: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.about-imag {
+    width: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.next-two {
+    width: 4.5em;
+}
+
+.next-three {
+    width: 14em;
+}
+
+.next-four {
+    width: 6em;
+}
+
+.next-five {
+    width: 13em;
+}
